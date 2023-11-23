@@ -1,0 +1,74 @@
+.cookie-banner {
+    width: 100%;
+    background-color: #032455b2;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cookie-banner button {
+    background-color: #4cafaa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cookie-banner button:hover {
+    background-color: #0064fa;
+}
+
+/* Animation for banner appearance */
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .cookie-banner {
+        padding: 10px;
+    }
+
+    .cookie-banner p {
+        font-size: 12px;
+    }
+
+    .cookie-banner button {
+        font-size: 12px;
+    }
+}
+
+/* Apply animation to banner */
+.slide-in {
+    animation: slideIn 0.5s ease;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease forwards;
+}

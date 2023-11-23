@@ -1,0 +1,58 @@
+/* Estilos generales */
+.contenedor-q {
+    max-width: 100%;
+    text-align: center;
+}
+
+.imagen-pollo {
+    width: 100%;
+    height: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estilos para la gráfica de pastel */
+.col-md-7 {
+    flex: 1 0 70%;
+    /* Establece el ancho a 70% en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .col-md-7 {
+        flex: 1 0 100%;
+        /* Establece el ancho a 100% en pantallas pequeñas */
+    }
+}
+
+#chart {
+    width: 100%;
+}
+
+/* Estilos para la tabla de datos */
+.tabla {
+    flex: 1 0 30%;
+    /* Establece el ancho a 30% en pantallas grandes */
+}
+
+@media (max-width: 768px) {
+    .tabla {
+        flex: 1 0 100%;
+        /* Establece el ancho a 100% en pantallas pequeñas */
+    }
+}
+
+/* Estilos para la tabla responsiva */
+.table {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Estilos para los resultados */
+.card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
